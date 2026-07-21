@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.rami.tutorialmod.TutorialMod;
+import net.rami.tutorialmod.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TutorialMod.MOD_ID);
@@ -21,6 +22,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(Items.DIAMOND);
+
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                     }))
                     .build()
     );
